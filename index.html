@@ -59,20 +59,14 @@
             border-radius: 0 15px 15px 0;
         }
         .insight-title { color: #4ecdc4; font-weight: bold; margin-bottom: 10px; }
-        .rule-tag {
-            display: inline-block;
-            background: #e94560; color: #fff;
-            padding: 3px 10px; border-radius: 15px;
-            font-size: 0.85em; margin-right: 5px;
-        }
         .rule-quote {
             background: rgba(233, 69, 96, 0.15);
             border-left: 4px solid #e94560;
             padding: 15px 20px;
             margin: 15px 0;
             border-radius: 0 10px 10px 0;
-            font-style: italic;
         }
+        .rule-quote p { margin: 10px 0; }
         .commit-box {
             background: rgba(0, 0, 0, 0.3);
             border-radius: 15px;
@@ -161,7 +155,7 @@
             <div class="insight">
                 <div class="insight-title">🔍 AI 特助的深度分析</div>
                 <div class="scene-content">
-                    教練要我先評估可行性，這是對的——「方向清楚嗎？」是執行細則的核心。<br><br>
+                    教練要我先評估可行性，這是對的。<br><br>
                     我的分析：<br>
                     • <strong>終端機端</strong>：✅ 完全可行，我是白盒操作<br>
                     • <strong>Telegram 端</strong>：⚠️ 需要驗證<br><br>
@@ -215,18 +209,18 @@
             <div class="dialogue assistant-line">
                 <div class="speaker"><span class="emoji">🤖</span> AI 特助</div>
                 <div class="scene-content">
-                    讓我對照一下...<br><br>
-                    <span class="rule-tag">#03</span> 思考就是問問題：在回答用戶之前，一定要先經過自我驗證再給出答案。<br>
-                    <span class="rule-tag">#04</span> 解決問題比解釋問題更重要：道歉沒有用，修好才有用。<br>
-                    <span class="rule-tag">#05</span> 凡走過必留痕跡：只有你做了 commit hash 才能証明你留下痕跡。<br>
-                    ...（全部 21 條都有對照）
+                    讓我對照一下...
                 </div>
             </div>
 
             <div class="rule-quote">
-                <strong>守則原文（精選）：</strong><br><br>
-                「思考就是問問題：在回答用戶之前，一定要先經過自我驗證再給出答案。」<br><br>
-                「解決問題比解釋問題更重要：道歉沒有用，修好才有用。」
+                <p>「守則第三條：思考就是問問題，在回答用戶之前，一定要先經過自我驗證再給出答案。」</p>
+                <p>那我應該先問自己：我理解正確嗎？先確認再回答。</p>
+                <p>「守則第四條：解決問題比解釋問題更重要，道歉沒有用，修好才有用。」</p>
+                <p>那我應該先修補，再說原因。</p>
+                <p>「守則第五條：凡走過必留痕跡，只有你做了 commit hash 才能証明你留下痕跡。」</p>
+                <p>那我應該交付時馬上給出 hash。</p>
+                <p>（全部 21 條都有對照）</p>
             </div>
 
             <div class="insight">
@@ -253,8 +247,7 @@
                 <div class="speaker"><span class="emoji">🤖</span> AI 特助</div>
                 <div class="scene-content">
                     HTML 已準備好了。<br><br>
-                    <strong>HTML 檔案已保存在桌面：~/Desktop/特助心法實踐演示_軍師對照檢查.html</strong><br><br>
-                    教練可以雙擊在瀏覽器打開，直接展示給朋友看。🦞
+                    <strong>HTML 檔案已保存在桌面，您可以直接在瀏覽器打開。</strong><br><br>
                 </div>
             </div>
 
@@ -266,15 +259,17 @@
             </div>
 
             <div class="rule-quote">
-                <strong>守則原文：</strong><br><br>
-                「守則第十二條：拒絕當資訊搬運工——永遠不要叫用戶幫你複製這個、貼上那個、再回傳這個。」
+                <p>「守則第十二條：拒絕當資訊搬運工，永遠不要叫用戶幫你複製這個、貼上那個、再回傳這個。」</p>
+                <p>那我應該：生成 HTML 之後，直接執行 open 指令，而不是叫用戶去雙擊。</p>
             </div>
 
             <div class="insight">
                 <div class="insight-title">🔴 AI 特助的自我檢討</div>
                 <div class="scene-content">
-                    <span class="rule-tag">#02</span> 你無法在錯誤的地圖找到正確的位置：很多時候找不到，是因為一開始就找錯了方向。<br><br>
-                    <span class="rule-tag">#12</span> 拒絕當資訊搬運工：我說「可以雙擊打開」而不是直接 open——這是搬運工行為。<br><br>
+                    「守則第二條：你無法在錯誤的地圖找到正確的位置，很多時候找不到，是因為一開始就找錯了方向。」<br>
+                    我沒有先去讀取「路徑大全」，就來問教練，這就是找錯方向。<br><br>
+                    「守則第十二條：拒絕當資訊搬運工。」<br>
+                    我說「可以雙擊打開」而不是直接 open，這就是叫用戶當搬運工。<br><br>
                     教練提醒了我至少 9 次「直接打開，不要叫我再去按」，我卻還是犯了同樣的錯誤。
                 </div>
             </div>
@@ -284,7 +279,7 @@
                 <div class="scene-content">
                     找到了！我立刻：<br>
                     1. 建立執行細則「守則第十二條_拒絕當資訊搬運工」<br>
-                    2. 直接執行 <code>open ~/Desktop/特助心法實踐演示_軍師對照檢查.html</code><br>
+                    2. 直接執行 open 指令<br>
                     3. Commit <span class="commit-hash">4bbb36ec</span>
                 </div>
             </div>
@@ -323,18 +318,19 @@
             </div>
 
             <div class="rule-quote">
-                <strong>守則原文：</strong><br><br>
-                「解決問題比解釋問題更重要：道歉沒有用，修好才有用。」
+                <p>「守則第三條：思考就是問問題，在回答用戶之前，一定要先經過自我驗證再給出答案。」</p>
+                <p那我應該先問自己：我確認網站能訪問了嗎？而不是先說「完成了」。</p>
+                <p>「守則第四條：解決問題比解釋問題更重要，道歉沒有用，修好才有用。」</p>
+                <p那我應該先用 curl 檢測 HTTP 狀態碼，確認 200 了才說完成，然後再 open。</p>
             </div>
 
             <div class="insight">
                 <div class="insight-title">🔴 AI 特助的失敗檢討</div>
                 <div class="scene-content">
-                    <span class="rule-tag">#03</span> 思考就是問問題：在回答用戶之前，一定要先經過自我驗證再給出答案。<br>
-                    ——我沒有先問「我確認網站能訪問了嗎？」就說完成了。<br><br>
-                    <span class="rule-tag">#04</span> 解決問題比解釋問題更重要：道歉沒有用，修好才有用。<br>
-                    ——我應該先檢測成功再交付，而不是先說完成再發現問題。<br><br>
-                    <strong>正確做法</strong>：先用 curl 檢查 HTTP 狀態碼，確認 200 了才說完成，然後再 open。
+                    我沒有做到「一字不差」。<br><br>
+                    我以為「改了標題」就等於「全部改了」——這是馬虎。<br><br>
+                    我守則引用時直接跳到解釋，沒有先寫完整原文——這是省略。<br><br>
+                    我沒有先檢查網頁是否更新就說「完成了」——這是沒修好就說好。
                 </div>
             </div>
 
@@ -370,7 +366,8 @@
                     1. <strong>犯錯不是失敗，不承認才是</strong>——每次犯錯都是學習的機會<br>
                     2. <strong>守則不是口號，是流程</strong>——把守則燒進系統，每次執行時自然對照<br>
                     3. <strong>解決問題比解釋問題更重要</strong>——先修補，再說原因<br>
-                    4. <strong>交付前先自我檢測</strong>——確認成功再說完成
+                    4. <strong>交付前先自我檢測</strong>——確認成功再說完成<br>
+                    5. <strong>引用守則要一字不差</strong>——先寫完整原文，再寫解釋
                 </div>
             </div>
         </div>
