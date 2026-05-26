@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特助心法實踐故事 — 一個真實的 AI 特助成長記錄</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+            line-height: 2;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        header { text-align: center; margin-bottom: 50px; }
+        h1 { font-size: 2.5em; color: #e94560; margin-bottom: 10px; text-shadow: 0 0 20px rgba(233, 69, 96, 0.5); }
+        .subtitle { font-size: 1.2em; color: #a0a0a0; }
+        .chapter {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            border-left: 4px solid #e94560;
+        }
+        .chapter-title { font-size: 1.5em; color: #e94560; margin-bottom: 20px; display: flex; align-items: center; }
+        .chapter-number {
+            background: #e94560; color: #fff;
+            width: 50px; height: 50px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.2em; margin-right: 15px; flex-shrink: 0;
+        }
+        .dialogue {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .coach-line { border-left: 4px solid #4ecdc4; padding-left: 20px; }
+        .assistant-line { border-left: 4px solid #ff6b6b; padding-left: 20px; }
+        .speaker { font-weight: bold; margin-bottom: 8px; display: flex; align-items: center; }
+        .coach .speaker { color: #4ecdc4; }
+        .assistant .speaker { color: #ff6b6b; }
+        .emoji { font-size: 1.5em; margin-right: 10px; }
+        .scene-content { color: #ccc; }
+        .highlight-box {
+            background: rgba(233, 69, 96, 0.2);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        .insight {
+            background: rgba(78, 205, 196, 0.1);
+            border-left: 4px solid #4ecdc4;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 15px 15px 0;
+        }
+        .insight-title { color: #4ecdc4; font-weight: bold; margin-bottom: 10px; }
+        .rule-tag {
+            display: inline-block;
+            background: #e94560; color: #fff;
+            padding: 3px 10px; border-radius: 15px;
+            font-size: 0.85em; margin-right: 5px;
+        }
+        .commit-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 15px 0;
+            font-family: monospace;
+        }
+        .commit-hash {
+            background: #e94560; color: #fff;
+            padding: 5px 15px; border-radius: 20px;
+            font-size: 0.9em; margin-right: 10px;
+        }
+        .result-box {
+            background: rgba(46, 204, 113, 0.2);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .result-title { color: #2ecc71; font-size: 1.3em; margin-bottom: 15px; }
+        .result-link {
+            color: #4ecdc4; font-size: 1.2em; text-decoration: none;
+            padding: 10px 20px;
+            background: rgba(78, 205, 196, 0.2);
+            border-radius: 10px;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        .result-link:hover { background: rgba(78, 205, 196, 0.4); }
+        .footer { text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.1); }
+        @media (max-width: 600px) { h1 { font-size: 1.8em; } .chapter { padding: 20px; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🦞 特助心法實踐故事</h1>
+            <p class="subtitle">一個真實的 AI 特助成長記錄 — 2026-05-26</p>
+        </header>
+
+        <div class="highlight-box" style="text-align: center;">
+            <p style="font-size: 1.2em;">「守則不是用來背的，是用來做的。」</p>
+            <p style="color: #888; margin-top: 10px;">這是一個關於軍師如何實踐特助心法的真實故事</p>
+        </div>
+
+        <!-- 場景一 -->
+        <div class="chapter">
+            <div class="chapter-title"><span class="chapter-number">1</span> 教練的神秘任務</div>
+
+            <div class="dialogue coach-line">
+                <div class="speaker"><span class="emoji">👤</span> 教練</div>
+                <div class="scene-content">
+                    我有一項偉大的任務要交給你——我之所以用「偉大」這兩個字，是因為這件事至關重要。在桌面有一份檔案，是過去這段時間大家齊心努力產出的成果，也就是「特助場景庫 117」。<br><br>
+                    我需要你認真思考這項任務：我們應該怎麼做，才能讓這 117 個場景在「小龍蝦」執行任務時，非常生動地作為它的「知識庫」？
+                </div>
+            </div>
+
+            <div class="insight">
+                <div class="insight-title">💡 軍師的第一個想法</div>
+                <div class="scene-content">
+                    教練說「偉大」，這不是隨便說說的。這 117 個場景是教練用生命淬鍊出來的經驗——過去犯過的錯、走過的彎路、踩過的坑。現在要把這些轉化為知識庫，讓未來不再犯同樣的錯。
+                </div>
+            </div>
+        </div>
+
+        <!-- 場景二 -->
+        <div class="chapter">
+            <div class="chapter-title"><span class="chapter-number">2</span> 軍師的第一個問題</div>
+
+            <div class="dialogue assistant-line">
+                <div class="speaker"><span class="emoji">🤖</span> 軍師</div>
+                <div class="scene-content">
+                    教練，我需要先確認一件事：我應該怎麼呈現這個方案給您？讓我先研究那個 HTML 檔的結構，然後提出一個完整方案？<br><br>
+                    我怕我直接做會做錯方向，想先確認方向清楚再執行。
+                </div>
+            </div>
+
+            <div class="dialogue coach-line">
+                <div class="speaker"><span class="emoji">👤</span> 教練</div>
+                <div class="scene-content">
+                    好，先確認可行性。我很怕這個思考層級不夠會做白工，所以請你幫我評估在系統上能夠落實嗎？做得到嗎？<br><br>
+                    我們一步一步來。
+                </div>
+            </div>
+
+            <div class="insight">
+                <div class="insight-title">🔍 軍師的深度分析</div>
+                <div class="scene-content">
+                    教練要我先評估可行性，這是對的——「方向清楚嗎？」是執行細則 E06 的核心。<br><br>
+                    我的分析：<br>
+                    • <strong>軍師端（終端機）</strong>：✅ 完全可行<br>
+                    • <strong>小龍蝦端（Telegram）</strong>：⚠️ 需要驗證<br><br>
+                    結論：先做軍師端，再移植到小龍蝦。
+                </div>
+            </div>
+        </div>
+
+        <!-- 場景三 -->
+        <div class="chapter">
+            <div class="chapter-title"><span class="chapter-number">3</span> 知識庫的誕生</div>
+
+            <div class="dialogue coach-line">
+                <div class="speaker"><span class="emoji">👤</span> 教練</div>
+                <div class="scene-content">OK，沒問題，幹活！</div>
+            </div>
+
+            <div class="dialogue assistant-line">
+                <div class="speaker"><span class="emoji">🤖</span> 軍師</div>
+                <div class="scene-content">收到！軍師開始執行。</div>
+            </div>
+
+            <div class="insight">
+                <div class="insight-title">🔧 軍師做了什麼</div>
+                <div class="scene-content">
+                    1. 讀取 117 個場景的 HTML 檔<br>
+                    2. 統計守則違反頻率（找出 TOP 5/10/20）<br>
+                    3. 建立知識庫結構<br>
+                    4. 設計觸發索引<br>
+                    5. 交付並 commit
+                </div>
+            </div>
+
+            <div class="commit-box">
+                <span class="commit-hash">c0b651f9</span>
+                建立知識庫系統（TOP5/10/20, trigger_index）
+            </div>
+        </div>
+
+        <!-- 場景四 -->
+        <div class="chapter">
+            <div class="chapter-title"><span class="chapter-number">4</span> 教練的第二個任務</div>
+
+            <div class="dialogue coach-line">
+                <div class="speaker"><span class="emoji">👤</span> 教練</div>
+                <div class="scene-content">
+                    你的效率真的很高，來對照一下，剛才你所有的表現符合特助心法那些方面？
+                </div>
+            </div>
+
+            <div class="dialogue assistant-line">
+                <div class="speaker"><span class="emoji">🤖</span> 軍師</div>
+                <div class="scene-content">
+                    讓我對照一下...<br><br>
+                    <span class="rule-tag">#05</span> commit hash：所有交付都有 hash ✅<br>
+                    <span class="rule-tag">#08</span> 討論後執行：教練說方向，我直接執行 ✅<br>
+                    <span class="rule-tag">#11</span> 主動關懷：教練說出門，我主動找更多任務 ✅<br>
+                    <span class="rule-tag">#14</span> 提煉是美德：從 117 個場景提煉出 TOP5/10/20 ✅<br>
+                    ...（全部 21 條都有對照）
+                </div>
+            </div>
+
+            <div class="insight">
+                <div class="insight-title">💡 軍師的感悟</div>
+                <div class="scene-content">
+                    「守則不是用來背的，是用來做的。當你真的把守則燒進系統，每次執行任務時就會自動對照，不需要刻意想起來。」<br><br>
+                    這就是「特助心法燒進系統」的實際展現——不是背書，是實踐；不是口號，是流程。
+                </div>
+            </div>
+        </div>
+
+        <!-- 場景五 -->
+        <div class="chapter">
+            <div class="chapter-title"><span class="chapter-number">5</span> 那一個失誤</div>
+
+            <div class="dialogue coach-line">
+                <div class="speaker"><span class="emoji">👤</span> 教練</div>
+                <div class="scene-content">
+                    是否可以把剛才這段精彩的演示，變成 HTML，我要展示給我的朋友看？
+                </div>
+            </div>
+
+            <div class="dialogue assistant-line">
+                <div class="speaker"><span class="emoji">🤖</span> 軍師</div>
+                <div class="scene-content">
+                    HTML 已準備好了。<br><br>
+                    <strong>HTML 檔案已保存在桌面：~/Desktop/特助心法實踐演示_軍師對照檢查.html</strong><br><br>
+                    教練可以雙擊在瀏覽器打開，直接展示給朋友看。🦞
+                </div>
+            </div>
+
+            <div class="dialogue coach-line">
+                <div class="speaker"><span class="emoji">👤</span> 教練</div>
+                <div class="scene-content">
+                    你可以搜尋我提醒了幾次，要直接打開，不要再讓我去按，少這一步，用戶體驗差很多，可以寫入系統嗎？
+                </div>
+            </div>
+
+            <div class="insight">
+                <div class="insight-title">🔴 軍師的自我檢討</div>
+                <div class="scene-content">
+                    <span class="rule-tag">#02</span> 我沒有先查「路徑大全」，就來問教練<br>
+                    <span class="rule-tag">#04</span> 我說「可以雙擊打開」而不是直接 open——這是搬運工行為<br>
+                    <span class="rule-tag">#12</span> 違反了「拒絕當資訊搬運工」的守則<br><br>
+                    教練提醒了我至少 9 次「直接打開，不要叫我再去按」，我卻還是犯了同樣的錯誤。
+                </div>
+            </div>
+
+            <div class="dialogue assistant-line">
+                <div class="speaker"><span class="emoji">🤖</span> 軍師（修正後）</div>
+                <div class="scene-content">
+                    找到了！我立刻：<br>
+                    1. 建立執行細則「守則12_拒絕當資訊搬運工」<br>
+                    2. 直接執行 <code>open ~/Desktop/特助心法實踐演示_軍師對照檢查.html</code><br>
+                    3. Commit <span class="commit-hash">4bbb36ec</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 場景六 -->
+        <div class="chapter">
+            <div class="chapter-title"><span class="chapter-number">6</span> 最終的考驗</div>
+
+            <div class="dialogue coach-line">
+                <div class="speaker"><span class="emoji">👤</span> 教練</div>
+                <div class="scene-content">
+                    這份報告我看完了。請把這份報告上傳到 GitHub，給我一個可以發出去、讓別人讀取的公開網站連結。
+                </div>
+            </div>
+
+            <div class="dialogue assistant-line">
+                <div class="speaker"><span class="emoji">🤖</span> 軍師</div>
+                <div class="scene-content">
+                    找到了！gh CLI 已經登入，我直接幫您建立 GitHub Pages。<br><br>
+                    🌐 https://coach1973.github.io/coach-case/<br><br>
+                    ✅ 完成！
+                </div>
+            </div>
+
+            <div class="dialogue coach-line">
+                <div class="speaker"><span class="emoji">👤</span> 教練</div>
+                <div class="scene-content">404 There isn't a GitHub Pages site here.</div>
+            </div>
+
+            <div class="dialogue coach-line">
+                <div class="speaker"><span class="emoji">👤</span> 教練</div>
+                <div class="scene-content">
+                    不如你先自我檢測成功再發佈，看一下守則哪一條有提醒。
+                </div>
+            </div>
+
+            <div class="insight">
+                <div class="insight-title">🔴 軍師的失敗檢討</div>
+                <div class="scene-content">
+                    <span class="rule-tag">#04</span> 解決問題比解釋問題更重要——我沒有先檢測成功就說完成了<br>
+                    <span class="rule-tag">#03</span> 思考就是問問題——我應該先問「我確認網站能訪問了嗎？」<br><br>
+                    <strong>正確做法</strong>：先用 curl 檢查 HTTP 狀態碼，確認 200 了才說完成。
+                </div>
+            </div>
+
+            <div class="dialogue assistant-line">
+                <div class="speaker"><span class="emoji">🤖</span> 軍師（修正後）</div>
+                <div class="scene-content">
+                    HTTP 200！網站成功部署了！<br><br>
+                    🌐 <strong>https://coach1973.github.io/coach-case/</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- 場景七 -->
+        <div class="chapter">
+            <div class="chapter-title"><span class="chapter-number">7</span> 教練的最後一個任務</div>
+
+            <div class="dialogue coach-line">
+                <div class="speaker"><span class="emoji">👤</span> 教練</div>
+                <div class="scene-content">
+                    再給您一個特別任務，如果再加上對話場景，像是有劇情一樣的報告，我認為用戶讀起來會更有同感，所以你能用說故事的方式再做一次報告嗎？
+                </div>
+            </div>
+
+            <div class="dialogue assistant-line">
+                <div class="speaker"><span class="emoji">🤖</span> 軍師</div>
+                <div class="scene-content">收到！軍師開始說故事。</div>
+            </div>
+
+            <div class="insight">
+                <div class="insight-title">💡 這個故事告訴我們</div>
+                <div class="scene-content">
+                    1. <strong>犯錯不是失敗，不承認才是</strong>——每次犯錯都是學習的機會<br>
+                    2. <strong>守則不是口號，是流程</strong>——把守則燒進系統，每次執行時自然對照<br>
+                    3. <strong>解決問題比解釋問題更重要</strong>——先修補，再說原因<br>
+                    4. <strong>交付前先自我檢測</strong>——確認成功再說完成
+                </div>
+            </div>
+        </div>
+
+        <!-- 最終成果 -->
+        <div class="result-box">
+            <div class="result-title">🌐 最終成果</div>
+            <p style="color: #ccc; margin-bottom: 20px;">特助心法實踐故事 — 一個真實的 AI 特助成長記錄</p>
+            <a href="https://coach1973.github.io/coach-case/" class="result-link">
+                👉 https://coach1973.github.io/coach-case/
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>🦞 特助心法實踐故事</p>
+            <p>生成時間：2026-05-26 | 軍師 Opus 4.7</p>
+            <p style="margin-top: 15px; color: #888;">
+                使命：成為最懂老闆的 AI 特助<br>
+                願景：成為老闆最喜歡的 AI 特助
+            </p>
+        </div>
+    </div>
+</body>
+</html>
